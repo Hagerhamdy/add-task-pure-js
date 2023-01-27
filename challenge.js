@@ -46,8 +46,8 @@ btnAdd.onclick = function (e) {
         tasksArr.push(input_task);
         //console.log(tasksArr)
         localStorage.setItem('tasks', JSON.stringify(tasksArr));
+         input_task.value = ''; 
         readData();
-        input_task.value = ''; 
     }
 }
 
