@@ -4,11 +4,6 @@ let tasks = document.querySelector(".tasks");
 let tasksItems = document.querySelectorAll('.tasks li')
 let tasksArr = [];
 
-if (localStorage.getItem('tasks')) {
-    //tasksArr = JSON.parse(localStorage.getItem('tasks')) || [];
-    readData()
-}
-
 localStorage.tasks !== null ? tasksArr = JSON.parse(localStorage.tasks) : tasksArr = [];
 
 function readData() {
